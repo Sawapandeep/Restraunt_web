@@ -1,0 +1,149 @@
+{
+    "customerCare": {
+        "title": "Customer Care",
+        "items": [
+            {
+                "label": "Help Center",
+                "key": "helpCenter"
+            },
+            {
+                "label": "Address Store",
+                "key": "addressStore"
+            },
+            {
+                "label": "Privacy Policy",
+                "key": "privacyPolicy"
+            },
+            {
+                "label": "Receivers & Amplifiers",
+                "key": "receivers"
+            },
+            {
+                "label": "Our Store",
+                "key": "ourStore"
+            }
+        ]
+    },
+    "quickShop": {
+        "title": "Quick Shop",
+        "items": [
+            {
+                "label": "About Us",
+                "key": "aboutUs"
+            },
+            {
+                "label": "Privacy Policy",
+                "key": "privacyPolicy"
+            },
+            {
+                "label": "Terms & Conditions",
+                "key": "terms"
+            },
+            {
+                "label": "Products Return",
+                "key": "returns"
+            },
+            {
+                "label": "Wholesale Policy",
+                "key": "wholesale"
+            }
+        ]
+    },
+    "company": {
+        "title": "Company",
+        "items": [
+            {
+                "label": "Pagination",
+                "key": "pagination"
+            },
+            {
+                "label": "Terms & Conditions",
+                "key": "terms"
+            },
+            {
+                "label": "Contact",
+                "key": "contact"
+            },
+            {
+                "label": "Accessories",
+                "key": "accessories"
+            },
+            {
+                "label": "Term of Use",
+                "key": "termsOfUse"
+            }
+        ]
+    },
+    "popups": {
+        "helpCenter": {
+            "title": "Help Center",
+            "text": "Our Help Center is your go-to resource for resolving any issues, understanding our services, and getting support 24/7.",
+            "button": {
+                "label": "Visit Support",
+                "link": "/support"
+            }
+        },
+        "addressStore": {
+            "title": "Store Location",
+            "text": "Visit our flagship location at 123 Food Lane, Culinary City. Open from 9am–9pm, Monday to Saturday.",
+            "image": "/images/store-map.png"
+        },
+        "privacyPolicy": {
+            "title": "Your Privacy Matters",
+            "text": "We are committed to safeguarding your privacy. Your personal data is encrypted and never shared without consent."
+        },
+        "receivers": {
+            "title": "Receivers & Amplifiers",
+            "text": "Our audio section features premium sound systems for kitchens, including Bluetooth amplifiers, smart speakers, and more."
+        },
+        "ourStore": {
+            "title": "Explore Our Store",
+            "text": "Walk into a world of culinary wonders. From ingredients to appliances, our store has everything a food lover dreams of.",
+            "button": {
+                "label": "Find Nearest Store",
+                "link": "/store-locator"
+            }
+        },
+        "aboutUs": {
+            "title": "Who We Are",
+            "text": "We are a team of passionate foodies dedicated to bringing gourmet-level quality to your home, every single day."
+        },
+        "terms": {
+            "title": "Terms & Conditions",
+            "text": "Before making a purchase or using our services, we recommend reviewing our updated terms to understand your rights."
+        },
+        "returns": {
+            "title": "Easy Returns",
+            "text": "Didn't like the flavor or fit? Return it within 7 days. No forms, no drama—just email us."
+        },
+        "wholesale": {
+            "title": "Wholesale Program",
+            "text": "Partner with us for bulk orders. Special pricing and logistics support for restaurants, offices, and events.",
+            "button": {
+                "label": "Join Wholesale",
+                "link": "/wholesale"
+            }
+        },
+        "pagination": {
+            "title": "Smart Navigation",
+            "text": "Use our intuitive menu filters and breadcrumbs to navigate across our wide range of products easily."
+        },
+        "contact": {
+            "title": "Contact Us",
+            "text": "Need to get in touch? Our team is here for you via phone, email, or live chat around the clock.",
+            "button": {
+                "label": "Contact Support",
+                "link": "/contact"
+            }
+        },
+        "accessories": {
+            "title": "Kitchen Accessories",
+            "text": "Explore our curated collection of chef knives, chopping boards, and innovative cooking tools.",
+            "image": "/images/accessories.png"
+        },
+        "termsOfUse": {
+            "title": "Terms of Use",
+            "text": "Review our user agreement outlining acceptable use, liability limits, and customer responsibilities."
+        }
+    }
+}
