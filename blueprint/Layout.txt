@@ -1,0 +1,15 @@
+ELA LAYOUT:
+
+ Color Scheme {Green(#7db473) black (#000000) Gold (#c49246)}
+  <Navbar /> (frost background, shdcn dropdown can use menu bar from shdcn)
+  <CarouselContainer />
+  <Menu/>    (grid layout can use bento grid from acernity lika carousell)
+  <Testimonials />(google review api)
+  <About Us/>
+  <Contct Us/> (use Gmaps)
+  <Reservation/> (use ripple in magic as background ,shdcn calender & card , shdcn React Hook Form, email verify otp - shdcn Input OTP)
+  <Footer/> (socail Links)
+  
+ additional (flip wrds from acernity)
+ELA DASHBOARD:
+shad cn
