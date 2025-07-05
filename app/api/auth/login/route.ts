@@ -12,7 +12,7 @@ export async function POST(req: Request) {
   res.cookies.set('admin-auth', 'true', {
     httpOnly: true,
     path: '/',
-    maxAge: 60 * 60 * 8, // 8 hours
+    maxAge: 60 * 8, // 8 minutes
     secure: process.env.NODE_ENV === 'production',
   })
 
