@@ -25,24 +25,28 @@ const Dish = () => (
 
 const items = [
   {
+    category: "Main",
     title: "The Dawn of Innovation",
     description: "Explore the birth of groundbreaking ideas and inventions.",
     header: <Dish />,
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
+    category: "Main",
     title: "The Digital Revolution",
     description: "Dive into the transformative power of technology.",
     header: <Dish />,
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
+    category: "Main",
     title: "The Art of Design",
     description: "Discover the beauty of thoughtful and functional design.",
     header: <Dish />,
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
+    category: "Main",
     title: "The Power of Communication",
     description:
       "Understand the impact of effective communication in our lives.",
@@ -50,30 +54,35 @@ const items = [
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
   {
+    category: "Sides",
     title: "The Pursuit of Knowledge",
     description: "Join the quest for understanding and enlightenment.",
     header: <Dish />,
     icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
   },
   {
+    category: "Main",
     title: "The Joy of Creation",
     description: "Experience the thrill of bringing ideas to life.",
     header: <Dish />,
     icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
   },
   {
+    category: "Main",
     title: "The Spirit of Adventure",
     description: "Embark on exciting journeys and thrilling discoveries.",
     header: <Dish />,
     icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
   },
   {
+    category: "Main",
     title: "The Spirit of Adventure",
     description: "Embark on exciting journeys and thrilling discoveries.",
     header: <Dish />,
     icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
   },
   {
+    category: "Main",
     title: "The Spirit of Adventure",
     description: "Embark on exciting journeys and thrilling discoveries.",
     header: <Dish />,

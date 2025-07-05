@@ -9,7 +9,7 @@
   --foreground: #171717;
 }
 * {
-  /* outline: 2px solid lime; */
+  outline: 2px solid lime;
 }
 @theme inline {
   --color-background: var(--background);
