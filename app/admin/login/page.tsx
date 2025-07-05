@@ -1,5 +1,4 @@
 'use client'
-
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 
@@ -8,19 +7,22 @@ export default function LoginPage() {
   const [error, setError] = useState('')
   const router = useRouter()
 
-  const handleLogin = () => {
-    const correctPassword = process.env.NEXT_PUBLIC_ADMIN_PASS // Change or secure this via .env in production
-    if (password === correctPassword) {
-      localStorage.setItem('auth', 'true')
+  const handleLogin = async () => {
+    const res = await fetch('/api/auth/login', {
+      method: 'POST',
+      body: JSON.stringify({ password }),
+    })
+
+    if (res.ok) {
       router.push('/admin/dashboard')
     } else {
-      setError('Incorrect password')
+      setError('Invalid password')
     }
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
-      <div className="bg-gray-800 p-6 rounded shadow-md w-full max-w-sm">
+    <div className="min-h-screen bg-gray-900 text-white flex justify-center items-center">
+      <div className="bg-gray-800 p-6 rounded w-full max-w-sm">
         <h1 className="text-xl font-bold mb-4">Admin Login</h1>
         <input
           type="password"
