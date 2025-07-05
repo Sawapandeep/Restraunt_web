@@ -11,6 +11,7 @@ export default function LoginPage() {
     const res = await fetch('/api/auth/login', {
       method: 'POST',
       body: JSON.stringify({ password }),
+      headers: { 'Content-Type': 'application/json' },
     })
 
     if (res.ok) {
@@ -21,13 +22,13 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex justify-center items-center">
-      <div className="bg-gray-800 p-6 rounded w-full max-w-sm">
-        <h1 className="text-xl font-bold mb-4">Admin Login</h1>
+    <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
+      <div className="bg-gray-800 p-6 rounded shadow-md w-full max-w-sm">
+        <h1 className="text-2xl font-bold mb-4">Admin Login</h1>
         <input
           type="password"
           className="w-full p-2 rounded bg-gray-700 mb-2"
-          placeholder="Enter admin password"
+          placeholder="Admin password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />

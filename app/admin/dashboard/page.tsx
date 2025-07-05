@@ -1,7 +1,8 @@
+
 'use client'
 
 import { useEffect, useState } from 'react';
-
+import { useRouter } from 'next/navigation'
 interface Item {
   category: string
   title: string
@@ -84,16 +85,28 @@ export default function Dashboard() {
     const updated = reviews.filter((_, idx) => idx !== i)
     saveReviews(updated)
   }
-
+  const router = useRouter()
+ const logout = async () => {
+    await fetch('/api/auth/logout', { method: 'POST' })
+    router.push('/admin/login')
+  }
   useEffect(() => {
     loadItems()
     loadReviews()
   }, [])
 
+
+
+ 
   return (
     <div className="min-h-screen bg-gray-900 text-white p-6">
       <h1 className="text-3xl font-bold mb-4">Admin Dashboard</h1>
-
+       <button
+          onClick={logout}
+          className="bg-red-600 hover:bg-red-700 px-4 py-2 rounded"
+        >
+          Logout
+        </button>
       <h2 className="text-xl mb-2 mt-4">Items</h2>
       <ul className="mb-4 space-y-2">
         {items.map((item, i) => (

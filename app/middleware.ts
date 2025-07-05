@@ -1,10 +1,15 @@
+// middleware.ts
 import { NextRequest, NextResponse } from 'next/server'
 
 export function middleware(req: NextRequest) {
-  const token = req.cookies.get('admin-auth')?.value
+  const url = req.nextUrl.clone()
 
-  if (!token && req.nextUrl.pathname.startsWith('/admin')) {
-    return NextResponse.redirect(new URL('/admin/login', req.url))
+  if (url.pathname.startsWith('/admin')) {
+    const token = req.cookies.get('admin-auth')?.value
+    if (!token) {
+      url.pathname = '/admin/login'
+      return NextResponse.redirect(url)
+    }
   }
 
   return NextResponse.next()
