@@ -5,7 +5,7 @@ import CarouselContainer from "./containers/CarouselContainer";
 import Footer from "./containers/Footer";
 import Navbar from "./containers/Navbar";
 import { Testimonials } from "./containers/Testimonials";
-import Main from "./containers/Main";
+import Menu from "./containers/Menu";
 import AboutUs from "./containers/AboutUs";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
     <div>
       <Navbar />
       <CarouselContainer />
-      <Main />
+      <Menu/>
       {/* <FoodGallery /> */}
       {/* <Munchies />
       <Drinks />
